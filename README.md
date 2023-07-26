@@ -1,8 +1,9 @@
-# Docker Compose
+# 🔥 Hot Docker Compose
 
-A way to work on multiple services at once on any OS with minimal setup.
+Wanna do containerized development with hot reloading?  
+Here's an approach to get you started.
 
-## 🎁 Services
+## 🕸️ Services
 
 <!-- REPOS=("docker-dotnet" "docker-react" "docker-express" "docker-bun")
 BASE_URL="https://github.com/VidunderGunder" -->
@@ -35,7 +36,7 @@ Stop services:
 docker-compose down
 ```
 
-## 🏎️ Develop With Docker and Hot Reloading
+## 🐇 Develop With Docker and Hot Reloading
 
 Start services, and just develop as you normally would
 
@@ -44,7 +45,7 @@ To enable intellisense in VSCode, you can do one of the following:
 - Install packages manually on your machine (see each `README.md`)
 - ~~Use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension~~ (WIP)
 
-## 🐌 Develop Locally (🪦 To Be Deprecated)
+## 🐌 Develop Locally
 
 For projects that are not setup to support hot module reloading (HMR) with Docker, you can develop locally and rebuild the containers when you are done.
 
