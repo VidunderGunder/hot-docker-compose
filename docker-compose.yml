@@ -1,0 +1,44 @@
+services:
+  dotnet:
+    container_name: dotnet
+    build:
+      context: ./docker-dotnet
+      dockerfile: Dockerfile.dev
+    ports:
+      - 5124:5124
+    volumes:
+      - ./docker-dotnet:/app
+      - dotnet-obj-volume:/app/obj
+
+  express:
+    container_name: express
+    build:
+      context: ./docker-express
+      dockerfile: Dockerfile.dev
+    ports:
+      - 8080:8080
+    volumes:
+      - ./docker-express/src:/app/src
+
+  bun:
+    container_name: bun
+    build:
+      context: ./docker-bun
+      dockerfile: Dockerfile
+    ports:
+      - 6969:6969
+    volumes:
+      - ./docker-bun/src:/app/src
+
+  react:
+    container_name: react
+    build:
+      context: ./docker-react
+      dockerfile: Dockerfile.dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./docker-react/src:/app/src
+
+volumes:
+  dotnet-obj-volume:
