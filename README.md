@@ -5,8 +5,7 @@ Here's an approach to get you started.
 
 ## 🕸️ Services
 
-<!-- REPOS=("docker-dotnet" "docker-react" "docker-express" "docker-bun")
-BASE_URL="https://github.com/VidunderGunder" -->
+Each service lives in a repository of their own:
 
 - [React Frontend](https://github.com/VidunderGunder/docker-react) | TypeScript | Vite
 - [DotNet Backend](https://github.com/VidunderGunder/docker-dotnet) | C# | .NET6
